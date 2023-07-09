@@ -2,11 +2,11 @@
 
 Taskinator can create, track, and delete any task.
 
--Add the tasks you need to do and when your finished, you can remove them.
+-Add the tasks you need to do and when your finished, you can mark as done or remove them.
+
+-The page stores & maintains the previous list contents for any new sessions you open.
 
 -Allows up to 8 tasks on the list at once.
-
--The page stores & maintains the previous list contentsfor any new sessions you open.
 
 -Used HTML, CSS, and Javascript & deployed to Netlify
 
