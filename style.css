@@ -44,19 +44,18 @@ body {
     border-radius: 18px 0px 0px 18px;
     outline: none;
     text-align: center;
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
   
   #searchbutton {
     width: 60px;
     height: 40px;
     margin-left: -4px;
-    transform: translateY(-1.5px);
     border-radius: 0px 18px 18px 0px;
     background-color: rgb(109, 15, 176);
     color: white;
     outline: none;
-    transform: translateY(-11px);
+    transform: translateY(-21px);
   }
   
   #tasklist {
@@ -66,17 +65,17 @@ body {
     text-align: left;
     flex-direction: column;
     transform: translateX(-130px);
-    max-height: 155px; /* Set a maximum height for the task list */
+    max-height: 220px; /* Set a maximum height for the task list */
     overflow-y: auto; /* Add scrolling when the tasks exceed the height */
-    margin-top: -10px; /* moves list items up down */
+    margin-top: -25px; /* moves list items up down */
     padding-left: 20px;
     
   }
 
   ul li{
     list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 3px 20px;
+    font-size: 16px;
+    padding: 8px 8px 3px 10px;
     user-select: none;
     cursor: pointer;
 
