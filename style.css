@@ -19,10 +19,11 @@ body {
     width: 500px;
     height: 325px;
     margin: 0 auto;
+    border-radius: 25px;
   }
   
   .tasksearch {
-    transform: translateY(-70px); /* Move Taskinator and Searchbar */
+    transform: translateY(-90px); /* Move Taskinator and Searchbar */
     height: 200px;
   }
   
@@ -60,11 +61,25 @@ body {
   
   #tasklist {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
     flex-direction: column;
-    transform: translateX(-20px);
+    transform: translateX(-130px);
+    max-height: 155px; /* Set a maximum height for the task list */
+    overflow-y: auto; /* Add scrolling when the tasks exceed the height */
+    margin-top: -10px; /* moves list items up down */
+    padding-left: 20px;
+    
+  }
+
+  ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 3px 20px;
+    user-select: none;
+    cursor: pointer;
+
   }
   
   .napquote {
@@ -74,7 +89,7 @@ body {
     right: 0;
     margin: 0 auto;
     text-align: center;
-    transform: translateY(120px); /* Adjust the transform value as needed */
+    transform: translateY(140px); /* Adjust the transform value as needed */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,10 +100,11 @@ body {
     height: 300px;
     width: 400px;
     margin-top: 20px;
+    border-radius: 25px;
   }
   
   #quote {
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(224, 10, 10);
     margin-top: 8px;
     width: 600px;
