@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function (){
         document.querySelector('#tasklist').append(li); 
 
         //removing a task
-        let span = document.createElement('span');
-        span.innerHTML = '\u00d7';
+        let span = document.createElement('span'); 
+        span.innerHTML = '\u00d7'; //the X cross
         li.appendChild(span);
 
        
@@ -33,17 +33,20 @@ document.addEventListener('DOMContentLoaded', function (){
         }
     }
 
+    //mark task as done
     document.querySelector('#tasklist').addEventListener('click', function (e){
         if(e.target.tagName === "LI"){
             e.target.classList.toggle("checked");
             saveData();
         }
+        //delete the task
         else if(e.target.tagName === "SPAN"){
             e.target.parentElement.remove();
             saveData();
         }
     });
 
+    //save to local storage
     function saveData(){
         localStorage.setItem("data", document.querySelector('#tasklist').innerHTML);
     }
