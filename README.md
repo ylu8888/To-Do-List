@@ -1,4 +1,4 @@
-# Taskinator https://taskinat0r.netlify.app/
+# Taskinator https://taskinatr.netlify.app/
 
 Taskinator can create, track, and delete any task.
 
