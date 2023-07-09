@@ -17,7 +17,7 @@ body {
     align-items: center;
     background-color: rgb(18, 17, 17);
     width: 500px;
-    height: 325px;
+    height: 335px;
     margin: 0 auto;
     border-radius: 25px;
   }
@@ -65,10 +65,12 @@ body {
     text-align: left;
     flex-direction: column;
     transform: translateX(-130px);
-    max-height: 220px; /* Set a maximum height for the task list */
-    overflow-y: auto; /* Add scrolling when the tasks exceed the height */
+    max-height: 225px; /* Set a maximum height for the task list */
+    /*overflow-y: auto;  /*Add scrolling when the tasks exceed the height */
     margin-top: -25px; /* moves list items up down */
-    padding-left: 20px;
+    
+    position: relative;
+    
     
   }
 
@@ -78,7 +80,64 @@ body {
     padding: 8px 8px 3px 10px;
     user-select: none;
     cursor: pointer;
+    position: relative;
+    /* Right align */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+    
 
+  }
+
+  ul li::before{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transform: translateX(-25px);
+    /* right align
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: right;*/
+   
+
+  }
+
+  ul li.checked{
+    color: springgreen;
+    text-decoration: line-through;
+
+  }
+
+  
+  ul li.checked::before{
+    background-image: url(checked.jpg); 
+  }
+  
+  ul li span{
+    position: absolute; 
+    right: 500;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: rgb(254, 2, 2);
+    line-height: 20px;
+    text-align: center;
+    transform: translateX(320px);
+    border-radius: 50%;
+    
+  }
+
+  ul li span:hover{
+    background-color: #edeef0;
   }
   
   .napquote {
@@ -88,7 +147,7 @@ body {
     right: 0;
     margin: 0 auto;
     text-align: center;
-    transform: translateY(140px); /* Adjust the transform value as needed */
+    transform: translateY(145px); /* Adjust the transform value as needed */
     display: flex;
     justify-content: center;
     align-items: center;
