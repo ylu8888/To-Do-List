@@ -83,7 +83,7 @@ body {
     position: relative;
     /* Right align */
     display: flex;
-    justify-content: space-between;
+   
     align-items: center;
     
    
@@ -102,11 +102,7 @@ body {
     background-position: center;
     color: white;
     transform: translateX(-25px);
-    /* right align
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: right;*/
-   
+
 
   }
 
