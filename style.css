@@ -1,0 +1,96 @@
+body {
+    font-family: Times New Roman;
+    margin: 5px;
+    background-color: rgb(32, 33, 36);
+    color: white;
+  }
+  
+  #heading {
+    color: rgb(109, 15, 176);
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 17, 17);
+    width: 500px;
+    height: 325px;
+    margin: 0 auto;
+  }
+  
+  .tasksearch {
+    transform: translateY(-70px); /* Move Taskinator and Searchbar */
+    height: 200px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  #searchbar {
+    margin: 0 auto;
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+    margin-right: 0px;
+    border-radius: 18px 0px 0px 18px;
+    outline: none;
+    text-align: center;
+    transform: translateY(-10px);
+  }
+  
+  #searchbutton {
+    width: 60px;
+    height: 40px;
+    margin-left: -4px;
+    transform: translateY(-1.5px);
+    border-radius: 0px 18px 18px 0px;
+    background-color: rgb(109, 15, 176);
+    color: white;
+    outline: none;
+    transform: translateY(-11px);
+  }
+  
+  #tasklist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transform: translateX(-20px);
+  }
+  
+  .napquote {
+    position: absolute;
+    top: 100%; /* Position the .napquote div below the .tasksearch div */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(120px); /* Adjust the transform value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #napol {
+    height: 300px;
+    width: 400px;
+    margin-top: 20px;
+  }
+  
+  #quote {
+    font-size: 17px;
+    color: rgb(224, 10, 10);
+    margin-top: 8px;
+    width: 600px;
+  }
+  
